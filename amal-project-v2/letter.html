@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Letter 💌 أمال</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Cairo:wght@400;600;700&family=Dancing+Script:wght@500;700&family=Great+Vibes&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="back" href="index.html" data-link>← Home</a>
+
+<main class="letter-stage">
+  <h1>A letter for <span class="ar">أمال</span></h1>
+
+  <div class="env" id="env" role="button" aria-label="Open the letter">
+    <div class="bk"></div>
+    <div class="pp"><span>أمال</span></div>
+    <div class="fr"></div>
+    <div class="fl"></div>
+    <div class="seal">❤️</div>
+  </div>
+
+  <div class="hint">TAP THE ENVELOPE TO OPEN IT</div>
+</main>
+
+<section class="sheet" id="sheet">
+  <div class="wrap">
+    <div class="tools">
+      <div>
+        <button class="pill on" id="langAr">عربي</button>
+        <button class="pill" id="langEn">English</button>
+      </div>
+      <button class="pill" id="close">✕ Close</button>
+    </div>
+    <article class="paper" id="paper" dir="rtl"><div id="lbody"></div></article>
+  </div>
+</section>
+
+<script src="common.js"></script>
+<script src="letter.js"></script>
+</body>
+</html>

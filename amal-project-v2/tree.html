@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amal's Tree 🌳 أمال</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Cairo:wght@400;600;700&family=Dancing+Script:wght@500;700&family=Great+Vibes&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-bg="off">
+
+<a class="back" href="index.html" data-link>← Home</a>
+
+<canvas id="tree"></canvas>
+
+<div class="hud">
+  <div class="meter"><span>🌱 Growth</span><i><b id="gBar"></b></i><em id="gTxt">0%</em></div>
+  <div class="meter l"><span>🏮 Lights</span><i><b id="lBar"></b></i><em id="lTxt">0/12</em></div>
+</div>
+
+<div class="gamehint" id="hint"></div>
+<div class="toast" id="toast"></div>
+<button class="pill reset" id="reset">↻ Restart</button>
+
+<section class="intro" id="intro">
+  <div class="introbox">
+    <h2>The game</h2>
+    <h1 class="name">شجرة أمال</h1>
+    <p>A tiny seed, a quiet night, and twelve lanterns waiting for you.</p>
+    <ol>
+      <li><b>Hold</b> anywhere to make it rain, and move the cloud over the tree 💧</li>
+      <li>When it blossoms, <b>tap the fireflies</b> before they fly away ✨</li>
+      <li>Each firefly lights a lantern and reveals a message 🏮</li>
+    </ol>
+    <button class="bigbtn" id="play">Play 🌱</button>
+  </div>
+</section>
+
+<section class="finale" id="finale">
+  <div class="introbox">
+    <h3>All twelve lights are on</h3>
+    <h1 class="name">أمال</h1>
+    <p>You grew it, you lit it. This tree is yours, and it will always be here for you.</p>
+    <button class="bigbtn" id="admire">Admire the tree 🌳</button>
+    <button class="bigbtn alt" id="again">Play again ↻</button>
+  </div>
+</section>
+
+<script src="common.js"></script>
+<script src="tree.js"></script>
+</body>
+</html>
